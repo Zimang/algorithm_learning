@@ -78,6 +78,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>E:\software\openCV\opencv\build\include;E:\软件\openCV\opencv\build\include\opencv2;$(IncludePath)</IncludePath>
+    <LibraryPath>E:\software\openCV\opencv\build\x64\vc15\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -139,7 +141,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="2-1的插入排序.cpp" />
     <ClCompile Include="Insertion-sort.cpp" />
+    <ClCompile Include="insertion_sort_withBinarySearch.cpp" />
+    <ClCompile Include="seqList.cpp" />
+    <ClCompile Include="二分查找.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="标头.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
